@@ -74,3 +74,8 @@ img {
 .Gmarket {
 	font-family: 'GmarketSansMedium';
 }
+footer {
+	text-align: center;
+	padding-top: 30px;
+	color: gray;
+}
