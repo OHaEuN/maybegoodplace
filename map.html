@@ -8,14 +8,12 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<title>여기 괜찮을지도?</title>
+        <link rel="stylesheet" href="style_map.css"> 
 	</head>
 	<body>
 		<div id="map" class="mar-wrap"></div>
 		<!-- 기본 지도 app key -->
-		<script
-			type="text/javascript"
-			src="//dapi.kakao.com/v2/maps/sdk.js?appkey=de2caf20deb854487f4250d7d24f7ffe"
-		>
+		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=de2caf20deb854487f4250d7d24f7ffe">
 			var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
 			var options = { //지도를 생성할 때 필요한 기본 옵션
 				center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
