@@ -1,0 +1,125 @@
+html,body{margin:0;padding:0;width:100%;height:100%;}
+.map_wrap, .map_wrap * {margin:0; padding:0;font-family:'Malgun Gothic',dotum,'돋움',sans-serif;font-size:12px;}
+.map_wrap {position:relative;width:100%;height:100%;}
+#category {position:absolute;top:10px;left:100px;border-radius: 5px; border:1px solid #909090;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);background: #003909;color:rgb(167, 167, 167);overflow: hidden;z-index: 2;}
+#category li {float:left;list-style: none;width:50px;border-right:1px solid #acacac;padding:6px 0;text-align: center; cursor: pointer;font-family: 'GmarketSansMedium';}
+#category #CE7 {padding-left: 2px;padding-right: 2px;}
+#category li.on {background: #164b1e;color:#D6B534;}
+#category li:hover {background: #0039096d;border-left:1px solid #acacac;margin-left: -1px;}
+#category li:last-child{margin-right:0;border-right:0;}
+#category li span {display: block;margin:0 auto 3px;width:27px;height: 28px;}
+#category li .category_bg {background:url('../img/topbar/places_category.png') no-repeat;}
+#category li .food {background-position: -10px -108px;}
+#category li .cafe {background-position: -10px -144px;}
+#category li .store {background-position: -10px -180px;}
+#category li.on .category_bg {background-position-x:-46px;}
+.placeinfo_wrap {position:absolute;bottom:28px;left:-150px;width:300px;}
+.placeinfo {position:relative;width:100%;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;padding-bottom: 10px;background: #fff;}
+.placeinfo:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}
+.placeinfo_wrap .after {content:'';position:relative;margin-left:-12px;left:50%;width:22px;height:12px;background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+.placeinfo a, .placeinfo a:hover, .placeinfo a:active{color:#fff;text-decoration: none;}
+.placeinfo a, .placeinfo span {display: block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.placeinfo span {margin:5px 5px 0 5px;cursor: default;font-size:13px;}
+.placeinfo .title {font-weight: bold; font-size:14px;border-radius: 6px 6px 0 0;margin: -1px -1px 0 -1px;padding:10px; color: #fff;background: #003909 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
+.placeinfo .tel {color:#0f7833;}
+.placeinfo .jibun {color:#999;font-size:11px;margin-top:0;}
+
+
+#sidebar {
+	background-color: #003909;
+	width: 75px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+	gap: 50px;
+
+	position: absolute;
+	left: 0px;
+	top: 0px;
+    z-index: 1;
+}
+
+.sidebar_text {
+	text-align: center;
+	color: #7c7c7c;
+}
+.sidebar{
+    text-decoration: none;
+}
+#sidebar_map,
+#sidebar_community,
+#sidebar_settings {
+	cursor: pointer;
+}
+
+img{
+    width: 20px;
+}
+
+.sidebarimg{
+    
+    width: 30px;
+    margin: 0 auto;
+}
+
+#sidebar_community .sidebarimg{
+    margin-left:7px;
+}
+
+#searchbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 10px;
+	position: absolute;
+	width: 300px;
+	height: 30px;
+	right: 25px;
+	top: 20px;
+	background: #ffffff;
+	border: 3px solid #003909;
+	border-radius: 10px;
+    z-index: 1;
+}
+
+#search_text {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1;
+	color: #000000;
+}
+
+@font-face {
+	font-family: 'GmarketSansMedium';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.Gmarket {
+	font-family: 'GmarketSansMedium';
+}
+
+#sidebar_map p {
+	color: #d6b534;
+}
+
+input {
+	width: 100%;
+	height: 100%;
+	border: none;
+	font-size: 25px;
+}
+
+input::placeholder {
+	color: rgb(109, 109, 109);
+	font-size: 14px;
+	font-family: 'GmarketSansMedium';
+}
+
